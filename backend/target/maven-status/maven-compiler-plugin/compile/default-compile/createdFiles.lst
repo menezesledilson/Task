@@ -1,0 +1,4 @@
+com\api\demo\service\GoogleSheetsService.class
+com\api\demo\DemoApplication.class
+com\api\demo\model\TarefaDTO.class
+com\api\demo\controller\TarefaController.class
