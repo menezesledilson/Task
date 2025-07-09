@@ -46,7 +46,8 @@ import java.util.List;
             String dataAtual = LocalDate.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
             String HoraAtual = LocalTime.now().format(DateTimeFormatter.ofPattern("HH:mm"));
 
-            List<List<Object>> valores = List.of(List.of(dataAtual,HoraAtual, descricao));
+            String descricaoFormatada = descricao.trim();
+            List<List<Object>> valores = List.of(List.of(dataAtual,HoraAtual, descricaoFormatada));
 
             ValueRange corpo = new ValueRange().setValues(valores);
 
@@ -73,7 +74,7 @@ import java.util.List;
              if (linha.size() >= 3) {
                  String data = linha.get(0).toString();      // coluna A
                  String hora = linha.get(1).toString();      // coluna B
-                 String descricao = linha.get(2).toString(); // coluna C
+                 String descricao = linha.get(2).toString().trim(); // coluna C
 
                  TarefaDTO tarefa = new TarefaDTO();
                  tarefa.setData(data);
