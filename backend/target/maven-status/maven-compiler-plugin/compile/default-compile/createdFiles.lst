@@ -1,4 +1,6 @@
 com\api\demo\service\GoogleSheetsService.class
-com\api\demo\DemoApplication.class
 com\api\demo\model\TarefaDTO.class
+com\api\demo\DemoApplication.class
+com\api\demo\Cors\CorsConfig.class
+com\api\demo\Cors\CorsConfig$1.class
 com\api\demo\controller\TarefaController.class
